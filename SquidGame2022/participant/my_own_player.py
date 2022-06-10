@@ -14,7 +14,8 @@ class my_own_player(part.Participant):
 
     # ====================================================================== for initializing your player every round
     def initialize_player(self, string):
-        random.seed(1);
+        random.seed(0);
+        # 홀짝 게임 초기화
         # you can override this method in this sub-class
         # this method must contain 'self.initialize_params()' which is for initializing some essential variables
         # you can initialize what you define
