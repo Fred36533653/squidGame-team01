@@ -5,8 +5,7 @@ import copy
 
 class my_own_player(part.Participant):
     def __init__(self):
-        random.seed(1);
-        super().__init__('team', '1')
+        super().__init__('Team1', '01')
         # you can change everything in this code file!!
         # also, you can define your own variables here or in the overriding method
         # Any modifications are possible if you follows the rules of Squid Game
@@ -15,9 +14,8 @@ class my_own_player(part.Participant):
     # ====================================================================== for initializing your player every round
     def initialize_player(self, string):
         random.seed(1);
-        # you can override this method in this sub-class
-        # this method must contain 'self.initialize_params()' which is for initializing some essential variables
-        # you can initialize what you define
+        # 랜덤시드 재설정
+
         self.initialize_params()
     # ====================================================================== for initializing your player every round
 
